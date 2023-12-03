@@ -30,7 +30,7 @@ const ThirdComponent = () => {
     ]
   return (
     <>
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col md:flex-row justify-center items-center">
             {subContent.map((item) => {
                 return (
                     <>
@@ -38,7 +38,7 @@ const ThirdComponent = () => {
                             title={item.title}
                             description={item.description}
                         />
-                        {item.img && <img src={item.img} alt="upcoming schedule"/>}
+                        {item.img && <img src={item.img} className="h-10 w-10" alt="upcoming schedule"/>}
                     </>
                 )
             })}
